@@ -13,3 +13,14 @@ h1 {
     text-align: center;
     color: rgb(0, 0, 0);
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#label1 {
+    font-size: 6em;
+    color: white;
+}
