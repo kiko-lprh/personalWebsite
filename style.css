@@ -24,3 +24,7 @@ h1 {
     font-size: 6em;
     color: white;
 }
+
+a{
+    text-decoration: none;
+}
