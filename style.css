@@ -1,30 +1,119 @@
 body {
-    background-image: url("1.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-
-h1 {
-    font-size: 48px;
+    padding: 0;
+  }
+  
+  header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: 8vh;
+  }
+  
+  header li,i {
+    display: inline;
+    float: right;
+    font-family: 'Work Sans', sans-serif;;
+    color: #000000;
+    margin-right: 10px;
     text-align: center;
-    color: rgb(0, 0, 0);
-}
+  }
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-#label1 {
-    font-size: 6em;
+  header li:hover {
+    background-color: black;
     color: white;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+
+  
+  footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header li a:link { 
+    text-decoration: none; 
+  }
+
+  header li a:visited { 
+    text-decoration: none; 
+  }
+
+  header li a:hover {
+     text-decoration: none; 
+     color: white;
+    }
+
+  header li a:active { 
+    text-decoration: none; 
+  }
+  
+  header li a {
+    color: black;
+  }
+
+  header img {
+    height: 50px; 
+    width: 70px;
+    margin-top: -10px;
+    
+  }
+
+  /* new */
+
+  .hero {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Work Sans', sans-serif;;
+  min-height: 40px;
 }
 
-a{
-    text-decoration: none;
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust card layout for smaller screens */
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+.card i{
+  margin: 10px;
 }
