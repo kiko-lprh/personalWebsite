@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Work Sans', sans-serif;;
     margin: 0;
     padding: 0;
   }
@@ -14,7 +14,6 @@ body {
   header li,i {
     display: inline;
     float: right;
-    font-family: 'Work Sans', sans-serif;;
     color: #000000;
     margin-right: 10px;
     text-align: center;
@@ -71,14 +70,16 @@ body {
     
   }
 
-  /* new */
-
   .hero {
-  background: #f1f1f1;
+  background: white;
   text-align: center;
   padding: 40px;
   font-family: 'Work Sans', sans-serif;;
   min-height: 40px;
+}
+
+.hero h1{
+  font-size: 64px;
 }
 
 .card-section {
@@ -102,8 +103,15 @@ body {
   margin-bottom: 10px;
 }
 
+.card i {
+  text-align: center;
+}
+
+#list {
+  line-height: 60px;
+}
+
 @media (max-width: 768px) {
-  /* Adjust card layout for smaller screens */
   .card-section {
     flex-direction: column;
     align-items: center;
@@ -116,4 +124,25 @@ body {
 
 .card i{
   margin: 10px;
+}
+
+footer i {
+  display: inline;
+  text-align: center;
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer i {
+  padding: 10px;
+  margin: 10px;
+}
+
+.centered-title{
+  margin-top: 100px;
 }

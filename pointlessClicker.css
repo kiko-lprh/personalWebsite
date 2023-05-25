@@ -1,41 +1,38 @@
-body {
-    background-image: url("Vector-Mountain-4K.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    margin: 0;
+body{
+    font-family: 'Work Sans', sans-serif;;
+    background-color: blanchedalmond;
+}
+button{
+    padding: 10px;
+    margin: 40px;
+    border-color: white;
 }
 
-h1 {
-    font-size: 48px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-#label1 {
-    font-size: 6em;
+#decrease{
+    background-color: red;
     color: white;
 }
 
-a{
-    text-decoration: none;
-}
-
-button {
-    background: transparent;
-    border: none;
-    font-size: 2em;
+#increase{
+    background-color: greenyellow;
     color: white;
 }
 
-#reset {
+#reset{
+    background-color: yellow;
     color: black;
+}
+
+#label1{
+    font-family: 'Work Sans', sans-serif;;
+    font-size: 64px;
+    color: black;
+}
+
+#label{
+    text-align: center;
+}
+
+#buttons{
+    text-align: center;
 }
