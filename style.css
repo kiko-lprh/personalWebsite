@@ -1,99 +1,102 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Body styles */
 body {
-    font-family: 'Work Sans', sans-serif;;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    height: 8vh;
-  }
-  
-  header li,i {
-    display: inline;
-    float: right;
-    color: #000000;
-    margin-right: 10px;
-    text-align: center;
-  }
+  font-family: 'Work Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  line-height: 1.5;
+}
 
-  header li:hover {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    position: relative;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
+/* Header styles */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  
-  footer {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
-  }
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Align the list items to the right */
+  flex-grow: 1;
+}
 
-  header li a:link { 
-    text-decoration: none; 
-  }
+header li {
+  margin-left: 20px;
+}
 
-  header li a:visited { 
-    text-decoration: none; 
-  }
+header li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-  header li a:hover {
-     text-decoration: none; 
-     color: white;
-    }
+header li a:hover {
+  color: #000000;
+}
 
-  header li a:active { 
-    text-decoration: none; 
-  }
-  
-  header li a {
-    color: black;
-  }
+header img {
+  height: 40px;
+}
 
-  header img {
-    height: 50px; 
-    width: 70px;
-    margin-top: -10px;
-    
-  }
-
-  .hero {
-  background: white;
+/* Hero section styles */
+.hero {
+  background: #ffffff;
   text-align: center;
   padding: 40px;
-  font-family: 'Work Sans', sans-serif;;
-  min-height: 40px;
 }
 
-.hero h1{
-  font-size: 64px;
+.hero h1 {
+  font-size: 48px;
+  color: #333333;
+  margin-bottom: 20px;
 }
 
+.hero p {
+  font-size: 20px;
+  color: #666666;
+}
+
+/* Centered title styles */
+.centered-title {
+  margin: 100px auto 50px;
+  text-align: center;
+}
+
+.centered-title h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+/* Card section styles */
 .card-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
   width: 300px;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -103,14 +106,67 @@ body {
   margin-bottom: 10px;
 }
 
-.card i {
+.card h2 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666666;
+}
+
+.card a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #333333;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #666666;
+  padding: 20px;
   text-align: center;
 }
 
-#list {
-  line-height: 60px;
+footer i {
+  display: inline;
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
 }
 
+#linked{
+  color: #0072b1;
+}
+
+#twit{
+  color: #00acee;
+}
+
+#git{
+  color: #171515;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h6 {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .card-section {
     flex-direction: column;
@@ -122,31 +178,19 @@ body {
   }
 }
 
-.card i{
-  margin: 10px;
+.animated-heading {
+  font-size: 36px;
+  animation: helloAnimation 2s ease-in-out infinite;
 }
 
-footer i {
-  display: inline;
-  text-align: center;
-}
-
-footer div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-footer i {
-  padding: 10px;
-  margin: 10px;
-}
-
-.centered-title{
-  margin-top: 100px;
-}
-
-#skills-title{
-  margin-top: 50px;
+@keyframes helloAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
